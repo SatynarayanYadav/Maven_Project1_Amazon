@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Suite" >
+  <test thread-count="5" name="Test1">
+  <parameter name="browser" value="Testing Chrome"></parameter>
     <classes>
-      <class name="Project1.Ecommerce_Amazon.Register_New_User_TC01"/>
+      
+      <class name="Project1.Ecommerce_Amazon.TC01_Register_New_User"/>
+      <class name="Project1.Ecommerce_Amazon.TC02_Verify_login_Valid_ids"/>
+      <class name="Project1.Ecommerce_Amazon.TC03_Verify_login_invalid_ids"/>
+      <class name="Project1.Ecommerce_Amazon.TC04_Edit_Profile_Info"/>
+      <class name="Project1.Ecommerce_Amazon.TC05_Searching_products"/>
+      <class name="Project1.Ecommerce_Amazon.TC06_searching_with_filter_category"/>
+      <class name="Project1.Ecommerce_Amazon.TC07_Displays_Product_price_reviews_description"/>
+      <class name="Project1.Ecommerce_Amazon.TC08_Sorted_by_price_rating"/>
+      <class name="Project1.Ecommerce_Amazon.TC09_Added_to_the_shopping_cart"/>
+      <class name="Project1.Ecommerce_Amazon.TC10_Cart_Item_quantities_and_removing_items"/>
+      <class name="Project1.Ecommerce_Amazon.TC11_Entire_Checkout_Process"/>
+      <class name="Project1.Ecommerce_Amazon.TC12_Select_Each_Payment_Method"/>
+      <class name="Project1.Ecommerce_Amazon.TC13_Coupon_Code_Apply"/>
+      <class name="Project1.Ecommerce_Amazon.TC15_Reachtill_Cartpage_without_login"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test2">
+  <parameter name="browser" value="Testing firbox"></parameter>
+    <classes>
+      
+      <class name="Project1.Ecommerce_Amazon.TC01_Register_New_User"/>
+      <class name="Project1.Ecommerce_Amazon.TC02_Verify_login_Valid_ids"/>
+      <class name="Project1.Ecommerce_Amazon.TC03_Verify_login_invalid_ids"/>
+      <class name="Project1.Ecommerce_Amazon.TC04_Edit_Profile_Info"/>
+      <class name="Project1.Ecommerce_Amazon.TC05_Searching_products"/>
+      <class name="Project1.Ecommerce_Amazon.TC06_searching_with_filter_category"/>
+      <class name="Project1.Ecommerce_Amazon.TC07_Displays_Product_price_reviews_description"/>
+      <class name="Project1.Ecommerce_Amazon.TC08_Sorted_by_price_rating"/>
+      <class name="Project1.Ecommerce_Amazon.TC09_Added_to_the_shopping_cart"/>
+      <class name="Project1.Ecommerce_Amazon.TC10_Cart_Item_quantities_and_removing_items"/>
+      <class name="Project1.Ecommerce_Amazon.TC11_Entire_Checkout_Process"/>
+      <class name="Project1.Ecommerce_Amazon.TC12_Select_Each_Payment_Method"/>
+      <class name="Project1.Ecommerce_Amazon.TC13_Coupon_Code_Apply"/>
+      <class name="Project1.Ecommerce_Amazon.TC15_Reachtill_Cartpage_without_login"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test3">
+  <parameter name="browser" value="Testing edge"></parameter>
+    <classes>
+      
+      <class name="Project1.Ecommerce_Amazon.TC01_Register_New_User"/>
+      <class name="Project1.Ecommerce_Amazon.TC02_Verify_login_Valid_ids"/>
+      <class name="Project1.Ecommerce_Amazon.TC03_Verify_login_invalid_ids"/>
+      <class name="Project1.Ecommerce_Amazon.TC04_Edit_Profile_Info"/>
+      <class name="Project1.Ecommerce_Amazon.TC05_Searching_products"/>
+      <class name="Project1.Ecommerce_Amazon.TC06_searching_with_filter_category"/>
+      <class name="Project1.Ecommerce_Amazon.TC07_Displays_Product_price_reviews_description"/>
+      <class name="Project1.Ecommerce_Amazon.TC08_Sorted_by_price_rating"/>
+      <class name="Project1.Ecommerce_Amazon.TC09_Added_to_the_shopping_cart"/>
+      <class name="Project1.Ecommerce_Amazon.TC10_Cart_Item_quantities_and_removing_items"/>
+      <class name="Project1.Ecommerce_Amazon.TC11_Entire_Checkout_Process"/>
+      <class name="Project1.Ecommerce_Amazon.TC12_Select_Each_Payment_Method"/>
+      <class name="Project1.Ecommerce_Amazon.TC13_Coupon_Code_Apply"/>
+      <class name="Project1.Ecommerce_Amazon.TC15_Reachtill_Cartpage_without_login"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

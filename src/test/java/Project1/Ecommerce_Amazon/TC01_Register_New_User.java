@@ -2,7 +2,8 @@ package Project1.Ecommerce_Amazon;
 
 import org.testng.annotations.Test;
 
-public class Register_New_User_TC01 extends LaunchQuit
+   //  1. Verify  new user can successfully register.
+public class TC01_Register_New_User extends LaunchQuit
 {
    @Test
    public void register_new_user()
@@ -16,6 +17,8 @@ public class Register_New_User_TC01 extends LaunchQuit
 	   Acount.Phoneno();
 	   Acount.pws();
 	   Acount.submit();
+	   
+	   home1.assert1(driver);
    }
    
 }
