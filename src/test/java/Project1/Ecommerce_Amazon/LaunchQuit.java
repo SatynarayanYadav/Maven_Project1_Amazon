@@ -20,30 +20,32 @@ public class LaunchQuit  extends ListenersLogicPage
 	public void launch(String nameofthebrowser)
 	{
 		
-		{
+		/*{
 			
 			driver = new ChromeDriver();
 			driver.get("https://www.amazon.in");
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		}
+		}*/
 		
-		if (nameofthebrowser.equals("chrome"))
+		
+		/*if (nameofthebrowser.equals("Testing Chrome"))
 		{
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.in");
 		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
-		if (nameofthebrowser.equals("firbox"))
+		
+		(nameofthebrowser.equals("Testing firbox"))
 		{
 		driver = new FirefoxDriver();
 		driver.get("https://www.amazon.in");
 		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
-		
-		if (nameofthebrowser.equals("edge"))
+		*/
+		if (nameofthebrowser.equals("Testing edge"))
 		{
 		driver = new EdgeDriver();
 		driver.get("https://www.amazon.in");
@@ -55,7 +57,7 @@ public class LaunchQuit  extends ListenersLogicPage
 	@AfterMethod
 	public void close()
 	{
-		//driver.quit();
+		driver.quit();
 	}
 	
 }

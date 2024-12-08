@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" >
-  <test thread-count="5" name="Test1">
-  <parameter name="browser" value="Testing Chrome"></parameter>
+<!-- 
+<test thread-count="5" name="Test1">
+<parameter name="browser" value="Testing Chrome"></parameter>
     <classes>
       
       <class name="Project1.Ecommerce_Amazon.TC01_Register_New_User"/>
@@ -21,8 +22,9 @@
       <class name="Project1.Ecommerce_Amazon.TC15_Reachtill_Cartpage_without_login"/>
       
     </classes>
-  </test> <!-- Test -->
+  </test> -->
   
+  <!-- 
   <test thread-count="5" name="Test2">
   <parameter name="browser" value="Testing firbox"></parameter>
     <classes>
@@ -43,7 +45,7 @@
       <class name="Project1.Ecommerce_Amazon.TC15_Reachtill_Cartpage_without_login"/>
       
     </classes>
-  </test> <!-- Test -->
+  </test> <Test --> 
   
   <test thread-count="5" name="Test3">
   <parameter name="browser" value="Testing edge"></parameter>
@@ -65,5 +67,5 @@
       <class name="Project1.Ecommerce_Amazon.TC15_Reachtill_Cartpage_without_login"/>
       
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- test -->
 </suite> <!-- Suite -->

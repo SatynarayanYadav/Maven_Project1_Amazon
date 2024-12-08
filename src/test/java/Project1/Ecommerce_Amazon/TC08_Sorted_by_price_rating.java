@@ -14,6 +14,10 @@ public class TC08_Sorted_by_price_rating extends LaunchQuit
 	   	  home1.hover(driver);
 	   	  home1.signinlink();
 	   	  
+	      DDT exle = new DDT();
+		  exle.UserDetails(driver);
+		  
+		  
 	   	  LoginPage login=new LoginPage(driver);
 	   	  login.Username();
 	   	  login.User_continue();
