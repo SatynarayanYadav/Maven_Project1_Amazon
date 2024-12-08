@@ -16,17 +16,17 @@ public class LaunchQuit  extends ListenersLogicPage
 {
     
 	@BeforeMethod 
-	@Parameters("browser")
-	public void launch(String nameofthebrowser)
+	//@Parameters("browser")
+	public void launch()//(String nameofthebrowser)
 	{
 		
-		/*{
+		{
 			
 			driver = new ChromeDriver();
 			driver.get("https://www.amazon.in");
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		}*/
+		}
 		
 		
 		/*if (nameofthebrowser.equals("Testing Chrome"))
@@ -44,14 +44,14 @@ public class LaunchQuit  extends ListenersLogicPage
 		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
-		*/
+		
 		if (nameofthebrowser.equals("Testing edge"))
 		{
 		driver = new EdgeDriver();
 		driver.get("https://www.amazon.in");
 		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		}
+		}*/
 	}
 	
 	@AfterMethod
