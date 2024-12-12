@@ -20,13 +20,13 @@ public class LaunchQuit  extends ListenersLogicPage
 	public void launch()//(String nameofthebrowser)
 	{
 		
-		{
+		
 			
 			driver = new ChromeDriver();
 			driver.get("https://www.amazon.in");
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		}
+		
 		
 		
 		/*if (nameofthebrowser.equals("Testing Chrome"))
@@ -57,7 +57,7 @@ public class LaunchQuit  extends ListenersLogicPage
 	@AfterMethod
 	public void close()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 	
 }

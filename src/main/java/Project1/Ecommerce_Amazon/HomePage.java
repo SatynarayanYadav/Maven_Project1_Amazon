@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -41,6 +42,7 @@ public class HomePage
     
     @FindBy (xpath = "//span[. = \"Men's Sneakers\"]") // Search product with catagory
     WebElement Catagory;
+    
     
     @FindBy (id="p_36/range-slider_slider-item_upper-bound-slider") // Price filter
     WebElement Price;
@@ -105,39 +107,34 @@ public class HomePage
     public void price_range(WebDriver driver) throws InterruptedException, AWTException
     {
     	
+    	Point  P1 = Price.getLocation();
+    	int x = P1.getX();
+    	int y = P1.getY();
+    
+    
     	JavascriptExecutor scroll = (JavascriptExecutor) driver;
-    	scroll.executeScript("window.scrollBy(0,800)");
-    	Thread.sleep(1000);
+    	scroll.executeScript("window.scrollBy(0,"+(y)+")");
+    	Thread.sleep(90);
     	//Price.click();
     	
     	Actions Ac = new Actions(driver);
-    	Ac.moveToElement(Price).perform();
+    	Ac.doubleClick(Price).perform();
     			
     	
     	Robot r1 = new Robot();
-    	r1.keyPress(KeyEvent.VK_LEFT);
-    	r1.keyPress(KeyEvent.VK_LEFT);
-    	r1.keyPress(KeyEvent.VK_LEFT);
-    	r1.keyPress(KeyEvent.VK_LEFT);
-    	r1.keyPress(KeyEvent.VK_LEFT);
-    	r1.keyPress(KeyEvent.VK_LEFT);
-    	r1.keyPress(KeyEvent.VK_LEFT);
-    	r1.keyPress(KeyEvent.VK_UP);
-    	r1.keyPress(KeyEvent.VK_UP);
-    	r1.keyPress(KeyEvent.VK_DOWN);
-    	r1.keyPress(KeyEvent.VK_DOWN);
-    	r1.keyPress(KeyEvent.VK_DOWN);
-    	r1.keyPress(KeyEvent.VK_DOWN);
-    	r1.keyPress(KeyEvent.VK_DOWN);
-    	r1.keyPress(KeyEvent.VK_DOWN);
-    	r1.keyPress(KeyEvent.VK_DOWN);
-    	r1.keyPress(KeyEvent.VK_DOWN);
+    	r1.keyPress(KeyEvent.VK_TAB);
+		for(int i=0;i<=100;i++)
+		{
+			Thread.sleep(100);
+			r1.keyPress(KeyEvent.VK_LEFT);
+		}
+    	
     	
     }
     
     public void buttonGo()
     {
-    	//Gobutton.click();
+    	Gobutton.click();
     }
     
     public void SortDropdown() throws InterruptedException

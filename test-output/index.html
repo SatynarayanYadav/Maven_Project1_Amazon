@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\satya\AppData\Local\Temp\testng-eclipse-1877748251\testng-customsuite.xml</span>
+                    <span>C:\Users\satya\AppData\Local\Temp\testng-eclipse--1079379580\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Project1.Ecommerce_Amazon.TC08_Sorted_by_price_rating" class="method navigator-link" hash-for-method="sorting_the_product">sorting_the_product</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Project1.Ecommerce_Amazon.TC11_Entire_Checkout_Process" class="method navigator-link" hash-for-method="checkout_process">checkout_process</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,22 +121,19 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Project1.Ecommerce_Amazon.TC08_Sorted_by_price_rating</span>
+              <span class="class-name">Project1.Ecommerce_Amazon.TC11_Entire_Checkout_Process</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sorting_the_product">
-                  </a> <!-- sorting_the_product -->
-                  <span class="method-name">sorting_the_product</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at Project1.Ecommerce_Amazon.LoginPage.Username(LoginPage.java:39)
-	at Project1.Ecommerce_Amazon.TC08_Sorted_by_price_rating.sorting_the_product(TC08_Sorted_by_price_rating.java:18)
+                  <a name="checkout_process">
+                  </a> <!-- checkout_process -->
+                  <span class="method-name">checkout_process</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: Cannot get a NUMERIC value from a STRING cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:987)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getNumericCellValue(XSSFCell.java:260)
+	at Project1.Ecommerce_Amazon.DDT.coupondetails(DDT.java:44)
+	at Project1.Ecommerce_Amazon.TC11_Entire_Checkout_Process.checkout_process(TC11_Entire_Checkout_Process.java:20)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -172,7 +169,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\satya\AppData\Local\Temp\testng-eclipse-1877748251\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\satya\AppData\Local\Temp\testng-eclipse--1079379580\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -181,7 +178,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Project1.Ecommerce_Amazon.TC08_Sorted_by_price_rating&quot;/&gt;
+      &lt;class name=&quot;Project1.Ecommerce_Amazon.TC11_Entire_Checkout_Process&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -223,14 +220,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sorting_the_product')
-data.setCell(0, 2, 'Project1.Ecommerce_Amazon.TC08_Sorted_by_price_rating')
-data.setCell(0, 3, 1198);
+data.setCell(0, 1, 'checkout_process')
+data.setCell(0, 2, 'Project1.Ecommerce_Amazon.TC11_Entire_Checkout_Process')
+data.setCell(0, 3, 11734);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -242,7 +239,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">sorting_the_product</span>
+              <span class="reporter-method-name">checkout_process</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Test cases executed by Itestlistener and fail  </span>
               </div> <!-- reporter-method-output-div -->
@@ -262,7 +259,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Project1.Ecommerce_Amazon.TC08_Sorted_by_price_rating</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Project1.Ecommerce_Amazon.TC11_Entire_Checkout_Process</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launch</span>
                 <span class="method-start">0 ms</span>
@@ -270,12 +267,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">sorting_the_product</span>
-                <span class="method-start">3778 ms</span>
+                <span class="method-name">checkout_process</span>
+                <span class="method-start">2563 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">5168 ms</span>
+                <span class="method-start">14453 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

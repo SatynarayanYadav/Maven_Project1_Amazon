@@ -28,10 +28,10 @@ public class TC06_searching_with_filter_category extends LaunchQuit
 	  
 	  home1.producte_search();
 	  
-	  //home1.Search_Catagory(driver);
+	  home1.Search_Catagory(driver);
 	  
 	  home1.price_range(driver);
 	  
-	  //home1.buttonGo();
+	  home1.buttonGo();
 }
 }
